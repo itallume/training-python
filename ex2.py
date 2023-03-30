@@ -1,7 +1,12 @@
-nota1 = float(input('Qual foi sua nota em matemática? '))
-nota2 = float(input('Qual foi sua nota em português? '))
-pn1 = 6
-pn2 = 4
-media = ((nota1 * pn1) + (nota2 * pn2)) / (pn1 + pn2)
+from ctypes.wintypes import PINT
 
-print(f'A média ponderadas das notas é: {media}')
+
+n1 = int(input("digite um numero: "))
+n2 = int(input("Digite o segundo numero: "))
+if n1 > n2:
+    print(f"Os numeros na ordem crescente é: {n2}; {n1}")
+else:
+    if n2 > n1:
+        print(f"Os numeros na ordem crescente é: {n1}; {n2}")
+    else:
+        print("Não existe um ordem definida, pois os numeros são iguais.")
